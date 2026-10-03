@@ -132,6 +132,8 @@ nav.stuck{border-bottom-color:var(--line)}
 .way-list{display:grid;gap:1.4rem 2.6rem;grid-template-columns:repeat(2,1fr)}
 .way h3{font-size:1.15rem;margin:0 0 .3rem}
 .way p{font-size:.88rem;color:var(--soft);line-height:1.65;margin:0 0 .4rem}
+.phase .when{display:block;font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--mark-teal);margin:0 0 .45rem}
 .way .when{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.1em;
   text-transform:uppercase;color:var(--mark-teal)}
 @media(max-width:760px){.way-list{grid-template-columns:1fr}}
@@ -335,49 +337,79 @@ footer{background:var(--white);border-top:1px solid var(--line)}
       <p class="lead" style="margin-top:1.2rem"><strong>We build both the intelligence and the operational system around it.</strong></p>
     </div>
 
+
+    <div class="ways rise" style="margin-top:2.8rem">
+      <div class="way-list">
+        <div class="way">
+          <h3>Returns first.</h3>
+          <p>We start from the P&amp;L line the workflow touches. No measurable number, no project.</p>
+        </div>
+        <div class="way">
+          <h3>Process second.</h3>
+          <p>Most of the value is in redesigning the work, not in the model.</p>
+        </div>
+        <div class="way">
+          <h3>Technology third.</h3>
+          <p>Automation, integration, rules or AI, whichever the measured case justifies.</p>
+        </div>
+        <div class="way">
+          <h3>Proof always.</h3>
+          <p>We re-measure against the baseline after go-live. Value claimed is value shown.</p>
+        </div>
+      </div>
+    </div>
     <div class="grid g3 rise" style="margin-top:2.6rem">
       <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>Advisory</h3>
-        <p>We find where AI is worth the effort, and where it isn&rsquo;t. Use-case prioritization, feasibility, operating models, architecture, readiness, and a costed business case. Then we build it.</p>
+        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>AI Strategy</h3>
+        <p>Where should AI create value? We find where AI is worth the effort, and where it isn&rsquo;t. Use-case prioritization, feasibility, operating models, architecture, readiness, and a costed business case. Then we build it.</p>
       </div>
       <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>Engineering</h3>
+        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>AI Engineering</h3>
         <p>We design and build AI applications, agents, and enterprise software; integrate them with your systems and data; and put security, governance, evaluation, monitoring, and reliability around them.</p>
       </div>
       <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>Forward-Deployed Execution</h3>
+        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>Forward Deployed Motion</h3>
         <p>Our engineers embed with your business and technical teams, learn how the work actually happens, and stay close from experimentation through reliable production and adoption.</p>
       </div>
     </div>
 
     <div class="ways rise">
-      <h3 class="subhead">Five ways in</h3>
-      <p class="waylede">Start where you are.</p>
+      <h3 class="subhead">How we choose the first workflow</h3>
+      <p class="waylede">We score candidates on three tests. Two out of three isn&rsquo;t enough.</p>
+      <div class="way-list">
+        <div class="way">
+          <h3>A measurable baseline.</h3>
+          <p>If we can&rsquo;t measure it today, we can&rsquo;t prove it tomorrow.</p>
+        </div>
+        <div class="way">
+          <h3>Expensive exceptions.</h3>
+          <p>That&rsquo;s where the money leaks.</p>
+        </div>
+        <div class="way">
+          <h3>A clear owner.</h3>
+          <p>Someone who can make the call.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ways rise">
+      <h3 class="subhead">Three ways to start</h3>
+      <p class="waylede">Each one has a defined exit, written into the agreement.</p>
       <div class="way-list">
         <div class="way">
           <h3>Value Sprint</h3>
-          <p>Use-case triage, feasibility on your real data, an instrumented baseline, and a costed business case.</p>
+          <p>Two weeks, fixed fee. Ends in a written go / no-go. You keep the baseline and the business case. No obligation to continue.</p>
           <span class="when">Where most teams start</span>
         </div>
         <div class="way">
           <h3>Production Pod</h3>
-          <p>One or two high-value workflows live in production, with guardrails, evaluations, observability, human controls, and a rollback path.</p>
+          <p>Twelve weeks, monthly. Stop-gate at week six. Part of the fee rides on the metric we agree up front. Thirty-day exit with full handover.</p>
           <span class="when">The first build</span>
         </div>
         <div class="way">
-          <h3>Scale &amp; Platform</h3>
-          <p>Reusable architecture, workflow components, shared evaluation infrastructure, common integrations, reference patterns, and the next workflows.</p>
-          <span class="when">After the first workflow</span>
-        </div>
-        <div class="way">
-          <h3>Run &amp; Assure</h3>
-          <p>SLAs, evaluation regression, drift and quality monitoring, cost monitoring, incident response, model changes, and upgrades.</p>
+          <h3>Operating coverage</h3>
+          <p>Quarter two onward, retained. Measured against the live metric. Ninety-day exit, documented handover.</p>
           <span class="when">Ongoing</span>
-        </div>
-        <div class="way">
-          <h3>Enablement</h3>
-          <p>Pair-building with your engineers, plus the runbooks, playbooks, documentation, and architecture your team needs to own what we build together.</p>
-          <span class="when">Runs throughout</span>
         </div>
       </div>
     </div>
@@ -395,41 +427,49 @@ footer{background:var(--white);border-top:1px solid var(--line)}
     </div>
 
     <div class="rise" style="margin-top:3rem">
-      <svg viewBox="0 0 1000 125" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg viewBox="0 -6 1000 131" fill="none" xmlns="http://www.w3.org/2000/svg"
            style="width:100%;height:auto" role="img"
-           aria-label="Four stages: ground truth, agent in the loop, production, handover, with a stop-gate between the second and third.">
+           aria-label="Four stages across twelve weeks: ground truth in weeks 0 to 2, shadow and eval in weeks 3 to 6, production in weeks 7 to 12, and handover running throughout, with a stop-gate at week six.">
         <line x1="80" y1="72" x2="920" y2="72" stroke="var(--mark-ink)" stroke-width="2"/>
         <circle cx="80"  cy="72" r="14" fill="var(--paper)" stroke="var(--mark-teal)" stroke-width="6"/>
         <circle cx="360" cy="72" r="14" fill="var(--paper)" stroke="var(--mark-teal)" stroke-width="6"/>
         <circle cx="640" cy="72" r="14" fill="var(--paper)" stroke="var(--mark-teal)" stroke-width="6"/>
         <circle cx="920" cy="72" r="14" fill="var(--paper)" stroke="var(--mark-teal)" stroke-width="6"/>
         <text x="80"  y="38" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="17" font-weight="500" fill="var(--ink)">Ground truth</text>
-        <text x="360" y="38" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="17" font-weight="500" fill="var(--ink)">Agent in the loop</text>
+        <text x="80" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="var(--mark-teal)">WEEKS 0–2</text>
+        <text x="360" y="38" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="17" font-weight="500" fill="var(--ink)">Shadow and eval</text>
+        <text x="360" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="var(--mark-teal)">WEEKS 3–6</text>
         <text x="640" y="38" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="17" font-weight="500" fill="var(--ink)">Production</text>
+        <text x="640" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="var(--mark-teal)">WEEKS 7–12</text>
         <text x="920" y="38" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="17" font-weight="500" fill="var(--ink)">Handover</text>
+        <text x="920" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="var(--mark-teal)">RUNS THROUGHOUT</text>
         <path d="M500 78 L507.5 89 L492.5 89 Z" fill="var(--mark-teal)"/>
         <text x="500" y="110" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="16" font-weight="500" fill="var(--mark-ink)">Stop-gate</text>
       </svg>
     </div>
 
     <p class="rise" style="max-width:44rem;margin:1.5rem 0 0;font-size:.92rem;color:var(--soft)">
-      If the numbers don&rsquo;t clear the bar we agreed at the start, we say so and stop. Better to stop early than spend a production budget scaling something that isn&rsquo;t working.
+      At week six, before production spend. If the numbers don&rsquo;t clear the bar we agreed at the start, we say so and stop. Better to stop early than spend a production budget scaling something that isn&rsquo;t working.
     </p>
 
     <div class="phases rise" style="margin-top:3rem">
       <div class="phase">
+        <span class="when">Weeks 0&ndash;2</span>
         <h3>Ground truth</h3>
         <p>We sit with the people doing the work, understand the systems behind it, and establish the baseline we will be measured against. If the foundation is not ready, we fix the necessary data paths, deployment paths, instrumentation, tests, and integration points before building anything on top.</p>
       </div>
       <div class="phase">
-        <h3>Agent in the loop</h3>
+        <span class="when">Weeks 3&ndash;6</span>
+        <h3>Shadow and eval</h3>
         <p>Before anything gets authority to act, we test it against your own case history and live workflows. We measure how it performs before it touches production decisions.</p>
       </div>
       <div class="phase">
+        <span class="when">Weeks 7&ndash;12</span>
         <h3>Production, with seatbelts</h3>
         <p>It goes live with approval thresholds, permissions, audit trails, monitoring, fallback behavior, and rollback. We give it more room only when the numbers hold up.</p>
       </div>
       <div class="phase">
+        <span class="when">Runs throughout</span>
         <h3>Handover</h3>
         <p>Your engineers build alongside ours from the beginning. The tests, runbooks, architecture, documentation, and operating knowledge stay with you.</p>
       </div>
@@ -444,7 +484,7 @@ footer{background:var(--white);border-top:1px solid var(--line)}
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Security starts on day one.</strong> Permissions, auditability, governance, and rollback are architecture, not retrofit.</span></p>
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Model- and cloud-neutral.</strong> We don&rsquo;t resell licenses, so we have no reason to over-specify a particular platform or model.</span></p>
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Shared risk.</strong> Where it makes sense, a meaningful portion of our fee rides on the metric we agree at the start.</span></p>
-      <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Your system stays yours.</strong> Your data, settings, business logic, documentation, and operational knowledge remain yours.</span></p>
+      <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Your work stays yours.</strong> Your data, settings, business logic, documentation, and operational knowledge remain yours.</span></p>
     </div>
   </div>
 </section>
@@ -490,7 +530,8 @@ footer{background:var(--white);border-top:1px solid var(--line)}
     <h2>Tell us about the workflow that costs you most.</h2>
     <a class="mail" href="mailto:hello@twopilots.ai">hello@twopilots.ai</a>
     <p style="margin-top:1.8rem;font-size:.88rem;color:var(--faint)">
-      An hour on a call, and we&rsquo;ll tell you what we&rsquo;d prioritize.
+      An hour on a call, and we&rsquo;ll tell you what we&rsquo;d prioritize.<br>
+      Look for a measurable baseline, expensive exceptions, and clear operational ownership.
     </p>
   </div>
 </div>
