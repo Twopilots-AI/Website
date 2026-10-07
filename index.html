@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>twopilots.ai — AI engineering services</title>
-<meta name="description" content="The hard part isn't the model. It's building the system around it. We are an AI engineering firm. We embed with your team to build, deploy, and adapt complex enterprise software and AI systems around how your business actually operates.">
-<meta property="og:title" content="twopilots.ai — AI engineering services">
-<meta property="og:description" content="The hard part isn't the model. It's building the system around it. We embed with your team to build, deploy, and adapt complex enterprise software and AI systems around how your business actually operates.">
+<title>twopilots.ai &mdash; AI Value Engineering</title>
+<meta name="description" content="AI is everywhere. Value isn't. Most companies don't have an AI problem, they have a prioritization problem. We find where AI will create the most value, prove it, build it, and measure what it delivers.">
+<meta property="og:title" content="twopilots.ai &mdash; AI Value Engineering">
+<meta property="og:description" content="Most companies don't have an AI problem. They have a prioritization problem. We find where AI will create the most value, prove it, build it, and measure what it delivers.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://twopilots.ai/og.png">
 <meta property="og:image:width" content="1200">
@@ -15,6 +15,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://twopilots.ai/og.png">
 <meta property="og:url" content="https://twopilots.ai">
+<link rel="canonical" href="https://twopilots.ai/">
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -23,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#202124; --soft:#5f6368; --faint:#9aa0a6;
+  --ink:#1a1b1d; --soft:#4a4e52; --faint:#767b80;
   --paper:#fcfcfa; --white:#ffffff; --line:#e8e8e4; --line-soft:#f0f0ec;
   --blue:#4285f4; --red:#ea4335; --yellow:#fbbc04; --green:#34a853;
   --mark-ink:#000000; --mark-teal:#1d9e75;
@@ -37,13 +39,13 @@
 *{box-sizing:border-box}
 html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
-  font-weight:300;font-size:1rem;line-height:1.72;letter-spacing:.002em}
+  font-weight:400;font-size:1rem;line-height:1.7;letter-spacing:0}
 a{color:inherit;text-decoration:none}
 img,svg{display:block;max-width:100%}
-h1,h2,h3{font-family:var(--serif);font-weight:200;letter-spacing:-.02em;line-height:1.16;margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.02em;line-height:1.16;margin:0}
 h1{font-size:clamp(2.3rem,1.1rem + 3.6vw,4.1rem)}
 h2{font-size:clamp(1.85rem,1rem + 2.2vw,2.9rem)}
-h3{font-size:1.22rem;font-weight:300;letter-spacing:-.01em;line-height:1.35}
+h3{font-size:1.22rem;font-weight:400;letter-spacing:-.01em;line-height:1.35}
 p{margin:0 0 1.15rem}
 p:last-child{margin-bottom:0}
 
@@ -52,8 +54,8 @@ p:last-child{margin-bottom:0}
 section{padding:clamp(4rem,9vh,7.5rem) 0}
 .eyebrow{font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.15em;
   text-transform:uppercase;color:var(--ink);margin:0 0 1.4rem}
-.lead{font-family:var(--sans);font-size:clamp(1.05rem,.9rem + .5vw,1.22rem);
-  font-weight:300;line-height:1.7;color:var(--soft)}
+.lead{font-family:var(--sans);font-size:clamp(1.08rem,.9rem + .55vw,1.28rem);
+  font-weight:400;line-height:1.65;color:var(--ink)}
 .hr{height:1px;background:var(--line);border:0;margin:0}
 
 /* ---------------- nav ---------------- */
@@ -100,7 +102,7 @@ nav.stuck{border-bottom-color:var(--line)}
   55%{opacity:.45}
   100%{transform:scale(1);opacity:0}
 }
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-art{order:-1;max-width:320px}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-art{order:1;max-width:300px;margin:0 auto}}
 
 /* ---------------- stat band ---------------- */
 .band{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -126,15 +128,16 @@ nav.stuck{border-bottom-color:var(--line)}
 
 .ways{margin-top:3.4rem;padding-top:2.2rem;border-top:1px solid var(--line)}
 .subhead{font-size:1.5rem;margin:0 0 1.6rem}
+.deliver{font-family:var(--sans);font-size:.82rem;color:var(--mark-teal);margin:.35rem 0 0}
 .waylede{margin:-1rem 0 1.6rem;font-size:.95rem;color:var(--soft)}
 .maillink{color:var(--mark-teal)}
 .maillink:hover{color:var(--ink)}
 .way-list{display:grid;gap:1.4rem 2.6rem;grid-template-columns:repeat(2,1fr)}
 .way h3{font-size:1.15rem;margin:0 0 .3rem}
 .way p{font-size:.88rem;color:var(--soft);line-height:1.65;margin:0 0 .4rem}
-.phase .when{display:block;font-family:var(--sans);font-size:.72rem;font-weight:500;
+.phase .when{display:block;font-family:var(--sans);font-size:.75rem;font-weight:600;
   letter-spacing:.1em;text-transform:uppercase;color:var(--mark-teal);margin:0 0 .45rem}
-.way .when{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.1em;
+.way .when{font-family:var(--sans);font-size:.75rem;font-weight:600;letter-spacing:.1em;
   text-transform:uppercase;color:var(--mark-teal)}
 @media(max-width:760px){.way-list{grid-template-columns:1fr}}
 
@@ -155,6 +158,7 @@ nav.stuck{border-bottom-color:var(--line)}
 @media(max-width:960px){.ind-cards{grid-template-columns:1fr}}
 
 /* ---------------- timeline ---------------- */
+@media(max-width:760px){.timeline-svg{display:none}}
 .phases{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:1.4rem}
 .phase h3{font-size:1.15rem;margin:0 0 .45rem}
 .phase .wk{font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
@@ -229,6 +233,8 @@ nav.stuck{border-bottom-color:var(--line)}
 /* ---------------- cta ---------------- */
 .cta{text-align:center;padding:clamp(4rem,10vh,7rem) 0}
 .cta h2{max-width:26rem;margin:0 auto}
+.booklink{color:var(--mark-teal)}
+.booklink:hover{color:var(--ink)}
 .mail{display:inline-block;margin-top:1.9rem;color:var(--mark-teal);font-family:var(--serif);
   font-size:clamp(1.25rem,.9rem + 1.1vw,1.75rem);font-weight:400;
   transition:color .4s ease}
@@ -241,8 +247,10 @@ footer{background:var(--white);border-top:1px solid var(--line)}
 .rule span:nth-child(1){flex:0 0 32%;background:var(--mark-ink)}
 .rule span:nth-child(2){flex:0 0 32%;background:var(--mark-teal)}
 .rule span:nth-child(3),.rule span:nth-child(4){flex:1 1 0}
-.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;
-  padding:2.6rem 0;font-size:.82rem;color:var(--faint)}
+.foot{display:flex;justify-content:space-between;gap:1.2rem 2rem;flex-wrap:wrap;
+  padding:2.6rem 0;font-size:.85rem;color:var(--soft)}
+.foot a{color:var(--soft)}
+@media(max-width:600px){.foot{flex-direction:column;padding:2.2rem 0}}
 .foot a:hover{color:var(--ink)}
 .foot-links{display:flex;gap:1.6rem;flex-wrap:wrap}
 
@@ -270,9 +278,10 @@ footer{background:var(--white);border-top:1px solid var(--line)}
     <div class="nav-links">
       <a href="#services">What we do</a>
       <a href="#approach">How we work</a>
+      <a href="#start">Where to start</a>
       <a href="#team">Team</a>
     </div>
-    <a class="btn" href="mailto:hello@twopilots.ai">Start a conversation</a>
+    <a class="btn" href="https://cal.com/twopilots/triage" target="_blank" rel="noopener">Start a conversation</a>
   </div>
 </nav>
 
@@ -282,17 +291,14 @@ footer{background:var(--white);border-top:1px solid var(--line)}
 <header class="hero">
   <div class="wrap hero-grid">
     <div class="rise">
-      <h1>One pilots.<br>One watches.<br><em>Both fly.</em></h1>
+      <h1>AI is everywhere.<br><em>Value isn&rsquo;t.</em></h1>
       <div class="lead hero-lines">
-        <p>Most AI projects stall between the demo and production.</p>
-        <p class="sp">The hard part isn&rsquo;t the model. It&rsquo;s building the system around it.</p>
-        <p class="sp">We are an AI engineering firm.</p>
-        <p class="sp">We are business operators, AI engineers, and domain experts. We embed with your team to build, deploy, and adapt complex enterprise software and AI systems around how your business actually operates.</p>
-        <p class="sp"><strong>Human judgment. Systems thinking. Machine intelligence.</strong></p>
+        <p>We are an AI engineering firm. We find where AI will create the most value, prove it, build it, measure it, and scale what works. We call this <strong>AI Value Engineering</strong>.</p>
+        <p class="sp"><strong>Human judgment. Machine intelligence. Business value.</strong></p>
         <p class="sp">You are the captain. We are the copilot.</p>
       </div>
       <div class="cta-row">
-        <a class="btn" href="mailto:hello@twopilots.ai">Book a 60-minute triage</a>
+        <a class="btn" href="https://cal.com/twopilots/triage" target="_blank" rel="noopener">Find your highest-value AI opportunity</a>
         <a class="btn ghost" href="#approach">See how we work</a>
       </div>
     </div>
@@ -331,85 +337,90 @@ footer{background:var(--white);border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="prose rise">
       <p class="eyebrow">What we do</p>
-      <h2>AI works when the system around it does.</h2>
-      <p class="lead" style="margin-top:1.6rem">Models are getting better quickly. But production AI depends on much more than the model: operational context, reliable data, process knowledge, permissions, governance, evaluation, monitoring, human oversight, and integration with the systems where work actually happens.</p>
-      <p class="lead" style="margin-top:1.2rem">The next advantage will not come from simply having the best model. It will come from building trustworthy systems that can understand context, reason across workflows, take action safely, and improve over time.</p>
-      <p class="lead" style="margin-top:1.2rem"><strong>We build both the intelligence and the operational system around it.</strong></p>
+      <h2>AI Value Engineering.</h2>
+      <p class="lead" style="margin-top:1.6rem">Find the value. Prove it. Build it. Measure it. Scale it.</p>
+      <p class="lead" style="margin-top:1.2rem">Most companies don&rsquo;t have an AI problem. They have a prioritization problem.</p>
+      <p class="lead" style="margin-top:1.2rem">There are hundreds of ways to apply AI. The challenge is knowing where it will matter most, what it&rsquo;s worth, whether it can actually work, and how fast you can realize the value.</p>
+      <p class="lead" style="margin-top:1.2rem">We don&rsquo;t start with a technology. We start with the economics of the business. Every engagement begins with one question: what business metric are we trying to move? Revenue. Cost. Cycle time. Capacity. Quality. Risk. Customer experience.</p>
+      <p class="lead" style="margin-top:1.2rem"><strong>Then we engineer backwards from the outcome.</strong></p>
     </div>
 
-
-    <div class="ways rise" style="margin-top:2.8rem">
+    <div class="ways rise" style="margin-top:3rem;padding-top:0;border-top:0">
       <div class="way-list">
         <div class="way">
-          <h3>Returns first.</h3>
-          <p>We start from the P&amp;L line the workflow touches. No measurable number, no project.</p>
+          <span class="when">Step 01</span>
+          <h3>Find</h3>
+          <p>Map the workflows where AI could materially improve revenue, cost, speed, quality, risk, or capacity.</p>
+          <p class="deliver">&rarr; AI opportunity map</p>
         </div>
         <div class="way">
-          <h3>Process second.</h3>
-          <p>Most of the value is in redesigning the work, not in the model.</p>
+          <span class="when">Step 02</span>
+          <h3>Value</h3>
+          <p>Establish the baseline. Quantify the upside. Calculate the economics.</p>
+          <p class="deliver">&rarr; Business case</p>
         </div>
         <div class="way">
-          <h3>Technology third.</h3>
-          <p>Automation, integration, rules or AI, whichever the measured case justifies.</p>
+          <span class="when">Step 03</span>
+          <h3>Prioritize</h3>
+          <p>Rank opportunities by value, feasibility, time-to-value, risk, and readiness.</p>
+          <p class="deliver">&rarr; AI value roadmap</p>
         </div>
         <div class="way">
-          <h3>Proof always.</h3>
-          <p>We re-measure against the baseline after go-live. Value claimed is value shown.</p>
-        </div>
-      </div>
-    </div>
-    <div class="grid g3 rise" style="margin-top:2.6rem">
-      <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>AI Strategy</h3>
-        <p>Where should AI create value? We find where AI is worth the effort, and where it isn&rsquo;t. Use-case prioritization, feasibility, operating models, architecture, readiness, and a costed business case. Then we build it.</p>
-      </div>
-      <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>AI Engineering</h3>
-        <p>We design and build AI applications, agents, and enterprise software; integrate them with your systems and data; and put security, governance, evaluation, monitoring, and reliability around them.</p>
-      </div>
-      <div class="cell">
-        <svg class="pip" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5" stroke="var(--mark-teal)" stroke-width="3"/></svg><h3>Forward Deployed Motion</h3>
-        <p>Our engineers embed with your business and technical teams, learn how the work actually happens, and stay close from experimentation through reliable production and adoption.</p>
-      </div>
-    </div>
-
-    <div class="ways rise">
-      <h3 class="subhead">How we choose the first workflow</h3>
-      <p class="waylede">We score candidates on three tests. Two out of three isn&rsquo;t enough.</p>
-      <div class="way-list">
-        <div class="way">
-          <h3>A measurable baseline.</h3>
-          <p>If we can&rsquo;t measure it today, we can&rsquo;t prove it tomorrow.</p>
+          <span class="when">Step 04</span>
+          <h3>Prove</h3>
+          <p>Test the highest-value opportunity against your real data and real workflows.</p>
+          <p class="deliver">&rarr; Working proof</p>
         </div>
         <div class="way">
-          <h3>Expensive exceptions.</h3>
-          <p>That&rsquo;s where the money leaks.</p>
+          <span class="when">Step 05</span>
+          <h3>Build</h3>
+          <p>Engineer the system, integrations, controls, and operating model required for production.</p>
+          <p class="deliver">&rarr; Production system</p>
         </div>
         <div class="way">
-          <h3>A clear owner.</h3>
-          <p>Someone who can make the call.</p>
+          <span class="when">Step 06</span>
+          <h3>Measure</h3>
+          <p>Track the business outcome, not just model performance.</p>
+          <p class="deliver">&rarr; Measured value</p>
+        </div>
+        <div class="way">
+          <span class="when">Step 07</span>
+          <h3>Scale</h3>
+          <p>Turn what works into repeatable enterprise capability.</p>
+          <p class="deliver">&rarr; AI capability, not another one-off</p>
         </div>
       </div>
     </div>
 
     <div class="ways rise">
-      <h3 class="subhead">Three ways to start</h3>
-      <p class="waylede">Each one has a defined exit, written into the agreement.</p>
+      <h3 class="subhead">What we build</h3>
+      <p class="waylede" style="margin-bottom:.9rem">AI agents and agentic workflows &middot; AI-powered applications &middot; decision-support systems &middot; intelligent automation &middot; process orchestration &middot; knowledge and reasoning systems &middot; data and AI infrastructure &middot; enterprise integrations &middot; evaluation and testing &middot; monitoring and observability &middot; human-in-the-loop workflows &middot; security, governance, and controls.</p>
+      <p style="max-width:44rem;font-size:.95rem;color:var(--soft);margin:0">The model is only one component. We engineer everything around it that makes the system useful, trustworthy, and economically viable.</p>
+    </div>
+
+    <div class="ways rise">
+      <h3 class="subhead">Where value lives</h3>
+      <p class="waylede">AI opportunities rarely sit inside an AI department. They live in the workflows that run the company.</p>
       <div class="way-list">
         <div class="way">
-          <h3>Value Sprint</h3>
-          <p>Two weeks, fixed fee. Ends in a written go / no-go. You keep the baseline and the business case. No obligation to continue.</p>
-          <span class="when">Where most teams start</span>
+          <h3>Revenue</h3>
+          <p>Quote-to-cash, sales operations, pricing, proposals, forecasting.</p>
         </div>
         <div class="way">
-          <h3>Production Pod</h3>
-          <p>Twelve weeks, monthly. Stop-gate at week six. Part of the fee rides on the metric we agree up front. Thirty-day exit with full handover.</p>
-          <span class="when">The first build</span>
+          <h3>Operations</h3>
+          <p>Supply chain, procurement, planning, quality, field operations, service delivery.</p>
         </div>
         <div class="way">
-          <h3>Operating coverage</h3>
-          <p>Quarter two onward, retained. Measured against the live metric. Ninety-day exit, documented handover.</p>
-          <span class="when">Ongoing</span>
+          <h3>People</h3>
+          <p>Hire-to-retire, recruiting, onboarding, employee support, knowledge management.</p>
+        </div>
+        <div class="way">
+          <h3>Customer</h3>
+          <p>Service, success, personalization, retention, experience.</p>
+        </div>
+        <div class="way">
+          <h3>Finance and risk</h3>
+          <p>Order-to-cash, financial operations, forecasting, compliance, risk, fraud.</p>
         </div>
       </div>
     </div>
@@ -423,11 +434,12 @@ footer{background:var(--white);border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="prose rise">
       <p class="eyebrow">How we work</p>
-      <h2>We pick one workflow and take it all the way to production.</h2>
+      <h2>Most AI projects stall between the demo and production.</h2>
+      <p class="lead" style="margin-top:1.6rem">The hard part isn&rsquo;t the model. It&rsquo;s building the system around it. This is steps 04 to 06 in detail: one workflow, taken all the way.</p>
     </div>
 
     <div class="rise" style="margin-top:3rem">
-      <svg viewBox="0 -6 1000 131" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg class="timeline-svg" viewBox="0 -6 1000 131" fill="none" xmlns="http://www.w3.org/2000/svg"
            style="width:100%;height:auto" role="img"
            aria-label="Four stages across twelve weeks: ground truth in weeks 0 to 2, shadow and eval in weeks 3 to 6, production in weeks 7 to 12, and handover running throughout, with a stop-gate at week six.">
         <line x1="80" y1="72" x2="920" y2="72" stroke="var(--mark-ink)" stroke-width="2"/>
@@ -449,7 +461,7 @@ footer{background:var(--white);border-top:1px solid var(--line)}
     </div>
 
     <p class="rise" style="max-width:44rem;margin:1.5rem 0 0;font-size:.92rem;color:var(--soft)">
-      At week six, before production spend. If the numbers don&rsquo;t clear the bar we agreed at the start, we say so and stop. Better to stop early than spend a production budget scaling something that isn&rsquo;t working.
+      At week six, before production spend. If the numbers don&rsquo;t clear the bar we agreed at the start, we say so and stop. Our job isn&rsquo;t to make every AI project succeed. It&rsquo;s to make sure you invest in the ones that should.
     </p>
 
     <div class="phases rise" style="margin-top:3rem">
@@ -485,6 +497,67 @@ footer{background:var(--white);border-top:1px solid var(--line)}
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Model- and cloud-neutral.</strong> We don&rsquo;t resell licenses, so we have no reason to over-specify a particular platform or model.</span></p>
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Shared risk.</strong> Where it makes sense, a meaningful portion of our fee rides on the metric we agree at the start.</span></p>
       <p><svg class="ck" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1 5.2 3.7 8 9 1.8" stroke="var(--mark-teal)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Your work stays yours.</strong> Your data, settings, business logic, documentation, and operational knowledge remain yours.</span></p>
+    </div>
+    <div class="ways rise">
+      <h3 class="subhead">One workflow at a time</h3>
+      <p style="max-width:44rem;font-size:.95rem;color:var(--soft);margin:0">You don&rsquo;t need a three-year transformation program. Start where the economics are most compelling. Find it. Fix it. Measure it. Then find the next one.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="hr">
+
+<!-- ================= WHERE TO START ================= -->
+<section id="start">
+  <div class="wrap">
+    <div class="prose rise">
+      <p class="eyebrow">Where to start</p>
+      <h2>Start where you are.</h2>
+      <p class="lead" style="margin-top:1.6rem">Each one has a defined exit, written into the agreement.</p>
+    </div>
+
+    <div class="ways rise" style="margin-top:2.6rem;padding-top:0;border-top:0">
+      <div class="way-list">
+        <div class="way">
+          <h3>Value Sprint</h3>
+          <p>Find out where AI is actually worth pursuing. We identify and prioritize opportunities, establish baselines, test feasibility, and build the business case.</p>
+          <span class="when">Two weeks, fixed fee. Written go / no-go. No obligation to continue.</span>
+        </div>
+        <div class="way">
+          <h3>AI Value Roadmap</h3>
+          <p>Turn scattered experimentation into an economic roadmap. We map opportunities across the business, quantify them, and sequence them by value and feasibility.</p>
+          <span class="when">For leadership teams setting enterprise AI investment strategy.</span>
+        </div>
+        <div class="way">
+          <h3>Production Pod</h3>
+          <p>Take a high-value opportunity from idea to production. A focused team works alongside yours to build, integrate, test, deploy, and measure one or two priority workflows.</p>
+          <span class="when">Twelve weeks. Billed monthly. Stop-gate at week six. Part of the fee rides on the metric we agree up front. Thirty-day exit with full handover.</span>
+        </div>
+        <div class="way">
+          <h3>Run &amp; Assure</h3>
+          <p>Keep it performing after go-live. Quality, cost, drift, reliability, adoption, and business outcome, monitored and continuously improved.</p>
+          <span class="when">Retained. Ninety-day exit, documented handover.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ways rise">
+      <h3 class="subhead">How we choose the first workflow</h3>
+      <p class="waylede">We score candidates on three tests. Two out of three isn&rsquo;t enough.</p>
+      <div class="way-list">
+        <div class="way">
+          <h3>A measurable baseline.</h3>
+          <p>If we can&rsquo;t measure it today, we can&rsquo;t prove it tomorrow.</p>
+        </div>
+        <div class="way">
+          <h3>Expensive exceptions.</h3>
+          <p>That&rsquo;s where the money leaks.</p>
+        </div>
+        <div class="way">
+          <h3>A clear owner.</h3>
+          <p>Someone who can make the call.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -527,11 +600,13 @@ footer{background:var(--white);border-top:1px solid var(--line)}
 <!-- ================= CTA ================= -->
 <div class="band">
   <div class="wrap cta rise">
+    <p class="lead" style="max-width:40rem;margin:0 auto 2.4rem">A pilot doesn&rsquo;t own the aircraft. A pilot helps you navigate it. You know where the company needs to go. We help work out where AI can take you, and make sure the aircraft is capable of getting there.</p>
     <h2>Tell us about the workflow that costs you most.</h2>
     <a class="mail" href="mailto:hello@twopilots.ai">hello@twopilots.ai</a>
     <p style="margin-top:1.8rem;font-size:.88rem;color:var(--faint)">
-      An hour on a call, and we&rsquo;ll tell you what we&rsquo;d prioritize.<br>
-      Look for a measurable baseline, expensive exceptions, and clear operational ownership.
+      An hour on a call. We&rsquo;ll look for a measurable baseline, expensive exceptions, and a clear owner, then tell you what we&rsquo;d prioritize.<br>
+      If we don&rsquo;t think AI will create enough value, we&rsquo;ll tell you that too.<br>
+      <a class="booklink" href="https://cal.com/twopilots/triage" target="_blank" rel="noopener">Book an hour</a> or write to us.
     </p>
   </div>
 </div>
@@ -543,6 +618,7 @@ footer{background:var(--white);border-top:1px solid var(--line)}
     <div class="foot-links">
       <a href="#services">What we do</a>
       <a href="#approach">How we work</a>
+      <a href="#start">Where to start</a>
       <a href="#team">Team</a>
       <a href="mailto:hello@twopilots.ai">hello@twopilots.ai</a>
     </div>
